@@ -115,7 +115,7 @@ If you want to change the structure
 4. Right-click, open with powershell
 
 ```powershell
-.\create_folders.ps1
+create_folders.ps1
 ```
 
 ## Document Classification Guide
