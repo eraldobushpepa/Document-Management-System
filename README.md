@@ -1,183 +1,206 @@
-# Document-Management-System
+# Document Management System Guidelines
 
-This is what I came with as a system approach to organize personal files/documents, ordered by year and categories.
+## Introduction
+This document management system is designed to help you organize your digital life efficiently. Before setting up your folder structure, consider these key questions and guidelines.
 
-## Structure Overview
+## Pre-Setup Questions
 
-```plaintext
-/[YEAR]/                # Current year documents
-    │
-    ├── 01 - Personal/         # Personal documents and correspondence
-    │   ├── 01 - Identity
-    │   ├── 02 - Contracts
-    │   └── 03 - Correspondence
-    │
-    ├── 02 - Finance/         # Financial records and transactions
-    │   ├── 01 - Bank Statements
-    │   ├── 02 - Investments
-    │   ├── 03 - Bills & Utilities
-    │   ├── 04 - Tax Documents
-    │   └── 05 - Receipts
-    │
-    ├── 03 - Health/          # Health-related documents
-    │   ├── 01 - Medical Records
-    │   ├── 02 - Prescriptions
-    │   ├── 03 - Test Results
-    │   └── 04 - Insurance
-    │
-    ├── 04 - Education/       # Educational materials and records
-    │   ├── 01 - Courses
-    │   ├── 02 - Certificates
-    │   ├── 03 - Projects
-    │   ├── 04 - Research
-    │   └── 05 - University
-    │       ├── Assignments
-    │       ├── Notes
-    │       └── Projects
-    │
-    ├── 05 - Documents/       # Administrative and legal documents
-    │   ├── 01 - Legal
-    │   ├── 02 - Administrative
-    │   └── 03 - Templates
-    │
-    ├── 06 - Projects/        # Project-related files
-    │   ├── 01 - Active
-    │   ├── 02 - Completed
-    │   └── 03 - Archive
-    │
-    └── 07 - Planning/        # Goals and planning documents
-        ├── 01 - Goals
-        ├── 02 - Reviews
-        └── 03 - Tracking
+### 1. Understanding Your Needs
+- What types of documents do you handle most frequently?
+- Do you need to separate personal and professional documents?
+- How many years of documents do you need to manage?
+- Do you work with sensitive documents that need special organization?
 
-/STATIC/                # Permanent reference materials
-    │
-    ├── 01 - Books/           # Book collections
-    │   ├── 01 - Technical
-    │   ├── 02 - Academic
-    │   └── 03 - Personal Development
-    │
-    ├── 02 - Music/           # Music files and playlists
-    │   ├── 01 - Collections
-    │   └── 02 - Playlists
-    │
-    ├── 03 - Photos/          # Photo collections
-    │   ├── 01 - Events
-    │   ├── 02 - Personal
-    │   └── 03 - Projects
-    │
-    ├── 04 - Knowledge Base/  # Learning resources and references
-    │   ├── 01 - Programming
-    │   │   ├── Languages
-    │   │   ├── Frameworks
-    │   │   ├── Tools
-    │   │   └── Resources
-    │   │
-    │   ├── 02 - Research
-    │   │   ├── Academic Papers
-    │   │   ├── Data Sets
-    │   │   └── Methods
-    │   │
-    │   ├── 03 - Documentation
-    │   │   ├── Technical Guides
-    │   │   ├── Personal Notes
-    │   │   └── Workflows
-    │   │
-    │   ├── 04 - References
-    │   │   ├── Templates
-    │   │   ├── Cheat Sheets
-    │   │   └── Best Practices
-    │   │
-    │   └── 05 - Analytics
-    │       ├── Templates
-    │       ├── Dashboards
-    │       └── Data Sources
-    │
-    └── 05 - Business/        # Business resources
-        ├── 01 - Resources
-        ├── 02 - Documentation
-        └── 03 - Planning
+### 2. Access Requirements
+- How often do you need to access historical documents?
+- Do you share any of these folders with family members or colleagues?
+- Do you need quick access to certain documents?
+- Do you need to access these documents from multiple devices?
 
-```
+### 3. Backup Considerations
+- Which folders contain critical documents that need regular backup?
+- Do you need version control for any documents?
+- Are there any compliance requirements for storing certain documents?
 
-## Quick Start
+## System Structure Overview
 
-1. Download the .ps1 file
-2. Navigate to your desired directory
-3. Right-click, open with powershell
-4. Run the script:
+### Year-Based Structure ([YEAR]/)
+This is where you store documents that are relevant to the current year or specific years.
 
-If you want to change the structure
+#### 01 - Personal
+Purpose: Store personal identification and communication documents
+Common uses:
+- Identity documents
+- Personal contracts
+- Important correspondence
+When to use: For documents that relate to your personal identity and relationships
 
-1. Change file from .ps1 to .txt
-2. Change the name of categories or whatever you want
-3. Save it, re-change it to .ps1
-4. Right-click, open with powershell
+#### 02 - Finance
+Purpose: Manage all financial documents
+Common uses:
+- Bank statements
+- Investment documents
+- Bills and receipts
+When to use: For any document related to money, payments, or financial planning
 
-```powershell
-create_folders.ps1
-```
+#### 03 - Health
+Purpose: Organize health-related documents
+Common uses:
+- Medical records
+- Prescriptions
+- Test results
+When to use: For managing your and your family's health documentation
 
-## Document Classification Guide
+#### 04 - Education
+Purpose: Store educational materials and records
+Common uses:
+- Course materials
+- Certificates
+- Academic projects
+When to use: For students or ongoing learning activities
 
-### When to use [YEAR] folders:
-- Documents tied to a specific date
-- Annual records
-- Current projects
-- Temporary documents
+#### 05 - Documents
+Purpose: General document storage
+Common uses:
+- Legal documents
+- Administrative papers
+- Document templates
+When to use: For important documents that don't fit in other categories
 
-### When to use STATIC folders:
-- Reference materials
-- Templates
-- Learning resources
-- Long-term knowledge base
+#### 06 - Projects
+Purpose: Manage project-related files
+Common uses:
+- Active projects
+- Completed work
+- Project archives
+When to use: For any project-based work or activities
 
-## Decision Tree for Filing
+#### 07 - Planning
+Purpose: Store planning and tracking documents
+Common uses:
+- Goals documentation
+- Progress reviews
+- Tracking sheets
+When to use: For documents related to planning and monitoring progress
 
-### 1. Time-Sensitive Documents ([YEAR])
-- **Personal Documents** → `01 - Personal/`
-  - IDs, passports → `01 - Identity/`
-  - Contracts → `02 - Contracts/`
-  - Correspondence → `03 - Correspondence/`
+### Static Structure (STATIC/)
+This is where you store permanent resources and knowledge bases that aren't year-specific.
 
-- **Financial Documents** → `02 - Finance/`
-  - Bank statements → `01 - Bank Statements/`
-  - Investment docs → `02 - Investments/`
-  - Bills/fines → `03 - Bills & Utilities/`
-  - Tax documents → `04 - Tax Documents/`
-  - Receipts → `05 - Receipts/`
+## Implementation Guidelines
 
-- **Health Documents** → `03 - Health/`
-  - Visit records → `01 - Medical Records/`
-  - Prescriptions → `02 - Prescriptions/`
-  - Test results → `03 - Test Results/`
-  - Insurance → `04 - Insurance/`
+### 1. Getting Started
+1. Create your root folder
+2. Set up the current year structure
+3. Create the STATIC folder
+4. Move existing documents to appropriate folders
 
-### 2. Reference Materials (STATIC)
-- **Knowledge Base** → `04 - Knowledge Base/`
-  - Programming resources → `01 - Programming/`
-  - Research papers → `02 - Research/`
-  - Documentation → `03 - Documentation/`
-  - Quick references → `04 - References/`
-  - Analytics → `05 - Analytics/`
+### 2. Naming Conventions
+- Use the provided numbering system (01, 02, etc.)
+- Keep folder names clear and consistent
+- Use hyphens (-) to separate words
+- Avoid special characters in folder names
 
-## Maintenance Tips
+### 3. Organization Rules
+- Always check if a document belongs in year-based or STATIC folders
+- Regularly review and archive old documents
+- Maintain consistent structure across years
+- Keep folder hierarchy no deeper than 4 levels
 
-### File Naming Convention
-Since I'm European, I'll use this date type
-```plaintext
-DD-MM-YYYY_Category_Description
-Example: 15-01-2025_Invoice_InternetBill.pdf
-```
+### 4. Best Practices
+- Review and clean up folders quarterly
+- Archive completed projects promptly
+- Maintain backup copies of critical folders
+- Document any custom folders you add to the structure
 
-## Setup Script
+## Regular Maintenance
 
-The PowerShell script (`create_folders.ps1`) will create the entire folder structure automatically. You can find it in this repository.
+### Monthly Tasks
+- Archive completed project files
+- Update planning documents
+- Clean up temporary files
 
-## Contributing
+### Quarterly Tasks
+- Review folder usage patterns
+- Archive or delete unnecessary files
+- Update document templates
 
-Feel free to suggest improvements or share your customizations through issues or pull requests.
+### Annual Tasks
+- Create new year folder structure
+- Archive previous year's documents
+- Review and update folder permissions
 
-## License
+## Customization Tips
+- Add sub-folders as needed, but maintain the basic structure
+- Create shortcuts to frequently accessed folders
+- Consider adding a README file in each main folder
+- Document any modifications to the standard structure
 
-MIT License - feel free to modify and use this structure for your needs.
+## Common Questions
+
+### When to Create New Folders?
+- When you have multiple documents of the same type
+- When a new category of documents emerges
+- When current folders become too crowded
+
+### When to Archive?
+- When projects are completed
+- When documents are no longer actively used
+- At the end of each year
+- When folders become too large
+
+### How to Handle Special Cases?
+- Shared documents: Create a dedicated sharing folder
+- Sensitive documents: Consider encryption
+- Large files: Use appropriate storage solutions
+- Temporary files: Create a dedicated temporary folder
+
+## Tips for Specific Users
+
+### For Students
+- Focus on the Education section
+- Organize by semester/year
+- Keep project files separate from course materials
+
+### For Professionals
+- Emphasize the Projects and Business sections
+- Create clear work/personal separation
+- Consider compliance requirements
+
+### For Families
+- Expand the Personal and Health sections
+- Create sub-folders for each family member
+- Focus on shared document accessibility
+
+### For Small Business Owners
+- Develop the Business section
+- Maintain clear financial records
+- Focus on client/project organization
+
+## System Maintenance Tools
+
+### Recommended Tools
+- File indexing software
+- Backup solutions
+- PDF management tools
+- File naming utilities
+
+### Regular Checks
+- Storage space usage
+- Backup integrity
+- Folder permissions
+- File organization compliance
+
+## Support and Updates
+
+### Getting Help
+- Document common issues
+- Keep track of folder modifications
+- Maintain a changelog for structure updates
+
+### System Updates
+- Review structure annually
+- Update naming conventions as needed
+- Adapt to new document types
+- Incorporate user feedback
+
+Remember: This system is flexible and can be adapted to your specific needs while maintaining its core organizational principles.
